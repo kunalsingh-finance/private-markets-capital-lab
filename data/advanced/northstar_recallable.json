@@ -1,0 +1,82 @@
+{
+  "case_id": "NORTHSTAR_RECALLABLE",
+  "name": "Northstar Recallable Commitment (Synthetic)",
+  "description": "Recallable cash distributions restore commitment capacity; a later call exceeds original commitment only within the explicit recallable amount. A separate late-recorded fee is withheld until September.",
+  "asof": "2026-06-30",
+  "known_at": "2026-08-15",
+  "facility_limit_cents": 0,
+  "facility_rate_bps": 0,
+  "management_fee_bps": 0,
+  "investors": [
+    {
+      "investor_id": "LP_A",
+      "name": "Northstar Institutional LP (Synthetic)",
+      "role": "LP",
+      "commitment_cents": 600000000
+    },
+    {
+      "investor_id": "LP_B",
+      "name": "Harbor Family LP (Synthetic)",
+      "role": "LP",
+      "commitment_cents": 380000000
+    },
+    {
+      "investor_id": "GP",
+      "name": "Northstar GP Co-invest (Synthetic)",
+      "role": "GP",
+      "commitment_cents": 20000000
+    }
+  ],
+  "events": [
+    {
+      "event_id": "NR001",
+      "effective_date": "2026-01-05",
+      "recorded_date": "2026-01-05",
+      "kind": "CALL",
+      "amount_cents": 1000000000
+    },
+    {
+      "event_id": "NR002",
+      "effective_date": "2026-01-05",
+      "recorded_date": "2026-01-05",
+      "kind": "INVEST",
+      "amount_cents": 800000000
+    },
+    {
+      "event_id": "NR003",
+      "effective_date": "2026-04-01",
+      "recorded_date": "2026-04-01",
+      "kind": "REALIZATION",
+      "amount_cents": 900000000,
+      "cost_cents": 800000000
+    },
+    {
+      "event_id": "NR004",
+      "effective_date": "2026-04-02",
+      "recorded_date": "2026-04-02",
+      "kind": "RECALLABLE_DISTRIBUTION",
+      "amount_cents": 300000000
+    },
+    {
+      "event_id": "NR005",
+      "effective_date": "2026-05-01",
+      "recorded_date": "2026-05-01",
+      "kind": "CALL",
+      "amount_cents": 300000000
+    },
+    {
+      "event_id": "NR006",
+      "effective_date": "2026-05-15",
+      "recorded_date": "2026-09-01",
+      "kind": "FEE",
+      "amount_cents": 100000
+    },
+    {
+      "event_id": "NR007",
+      "effective_date": "2026-06-30",
+      "recorded_date": "2026-07-02",
+      "kind": "DISTRIBUTION",
+      "amount_cents": 500000000
+    }
+  ]
+}

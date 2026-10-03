@@ -1,0 +1,104 @@
+{
+  "case_id": "NORTHSTAR_CASH_SHORTFALL",
+  "name": "Northstar Funding Shortfall (Synthetic)",
+  "description": "The reduced call covers principal but leaves no cash for accrued interest. Replay stops at INTEREST_PAYMENT and preserves the last valid ledger.",
+  "asof": "2026-06-30",
+  "known_at": "2026-08-15",
+  "facility_limit_cents": 650000000,
+  "facility_rate_bps": 650,
+  "management_fee_bps": 200,
+  "investors": [
+    {
+      "investor_id": "LP_A",
+      "name": "Northstar Institutional LP (Synthetic)",
+      "role": "LP",
+      "commitment_cents": 600000000
+    },
+    {
+      "investor_id": "LP_B",
+      "name": "Harbor Family LP (Synthetic)",
+      "role": "LP",
+      "commitment_cents": 380000000
+    },
+    {
+      "investor_id": "GP",
+      "name": "Northstar GP Co-invest (Synthetic)",
+      "role": "GP",
+      "commitment_cents": 20000000
+    }
+  ],
+  "events": [
+    {
+      "event_id": "NS001",
+      "effective_date": "2026-01-02",
+      "recorded_date": "2026-01-02",
+      "kind": "FACILITY_DRAW",
+      "amount_cents": 600000000
+    },
+    {
+      "event_id": "NS002",
+      "effective_date": "2026-01-02",
+      "recorded_date": "2026-01-02",
+      "kind": "INVEST",
+      "amount_cents": 600000000
+    },
+    {
+      "event_id": "NS003",
+      "effective_date": "2026-04-01",
+      "recorded_date": "2026-04-01",
+      "kind": "CALL",
+      "amount_cents": 600000000
+    },
+    {
+      "event_id": "NS004",
+      "effective_date": "2026-04-01",
+      "recorded_date": "2026-04-01",
+      "kind": "FACILITY_REPAY",
+      "amount_cents": 600000000
+    },
+    {
+      "event_id": "NS005",
+      "effective_date": "2026-04-01",
+      "recorded_date": "2026-04-01",
+      "kind": "INTEREST_PAYMENT",
+      "amount_cents": 9509589
+    },
+    {
+      "event_id": "NS006",
+      "effective_date": "2026-04-01",
+      "recorded_date": "2026-04-01",
+      "kind": "FEE",
+      "amount_cents": 4931507,
+      "period_start": "2026-01-01",
+      "period_end": "2026-04-01",
+      "annual_bps": 200
+    },
+    {
+      "event_id": "NS007",
+      "effective_date": "2026-05-31",
+      "recorded_date": "2026-05-31",
+      "kind": "REVALUE",
+      "amount_cents": 0,
+      "delta_cents": 60000000
+    },
+    {
+      "event_id": "NS008",
+      "effective_date": "2026-06-30",
+      "recorded_date": "2026-07-02",
+      "kind": "REALIZATION",
+      "amount_cents": 900000000,
+      "cost_cents": 660000000,
+      "historical_cost_cents": 600000000
+    },
+    {
+      "event_id": "NS009",
+      "effective_date": "2026-06-30",
+      "recorded_date": "2026-07-02",
+      "kind": "FEE",
+      "amount_cents": 4931507,
+      "period_start": "2026-04-01",
+      "period_end": "2026-06-30",
+      "annual_bps": 200
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+fund_id,name,vintage,strategy,commitment_usd
+ALPHA,Alpha Buyout Fund (Synthetic),2022,Buyout,8000000.00
+BETA,Beta Private Credit Fund (Synthetic),2020,Private Credit,5000000.00
+GAMMA,Gamma Growth Fund (Synthetic),2024,Growth Equity,6000000.00
+DELTA,Delta Secondaries Fund (Synthetic),2022,Secondaries,3000000.00
