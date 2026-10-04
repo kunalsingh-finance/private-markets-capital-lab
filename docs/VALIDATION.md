@@ -37,7 +37,7 @@ Browser verification in Codex's in-app browser checked fund selection, a one-poi
 
 Desktop layout was checked at a 1280-pixel viewport and the investor report at 390 by 844 pixels. The page had no horizontal overflow at either checked width; wide financial tables scroll within their own containers. This is limited responsive verification, not an exhaustive browser/accessibility certification. A representative desktop screenshot is saved at `output/report_preview.jpg`.
 
-The release contains thirteen hashed evidence artifacts and nine exact source inputs (four comparison CSVs, four partnership JSON cases and one derived public snapshot). It includes source, tests, methodologies, SQL queries and the interview walkthrough. Power BI measures remain a documented handoff; no native PBIX or DAX execution is claimed. The optional downloader was not used to produce the public observations.
+The release contains thirteen hashed evidence artifacts and nine exact source inputs (four comparison CSVs, four partnership JSON cases and one derived public snapshot). It includes source, tests, methodologies and SQL queries. Power BI measures remain a documented handoff; no native PBIX or DAX execution is claimed. The optional downloader was not used to produce the public observations.
 
 ## Reproduce
 
@@ -51,4 +51,4 @@ python scripts/verify_portability.py
 python scripts/run_demo.py --known-at 2026-09-15 --output-dir output/restated
 ```
 
-The source rebuild uses only the Python standard library and included inputs. Test success does not establish actual investment performance, production operations, GIPS/ILPA compliance, employment experience or an interview outcome.
+The source rebuild uses only the Python standard library and included inputs. Test success does not establish actual investment performance, production operations, GIPS/ILPA compliance or realized client outcomes.

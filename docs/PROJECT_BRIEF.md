@@ -1,8 +1,8 @@
 # Private Markets Performance & Capital Lab
 
-An independent portfolio project that connects private-fund reporting, economic partnership accounts and distribution economics. A reviewer can follow a dated record through Python calculations, investor statements, a SQLite warehouse and an offline report, then inspect the assumptions and unresolved controls.
+An independent research project that connects private-fund reporting, economic partnership accounts and distribution economics. A reviewer can follow a dated record through Python calculations, investor statements, a SQLite warehouse and an offline report, then inspect the assumptions and unresolved controls.
 
-This project adds a distinct private-markets workflow to a portfolio that already covers investment performance, NAV reconciliation, treasury and bank risk. Its career relevance is a design inference from official employer descriptions requesting data ingestion, quality control, lineage, Python/SQL and investor reporting. It does not imply employer endorsement, vacancy availability, candidate eligibility or a promised interview. [Primary sources](SOURCES.md)
+The workflow combines data ingestion, quality control, lineage, financial calculations and investor reporting. [Primary sources](SOURCES.md) document the reporting and performance references and their implementation limits.
 
 ## Delivered system
 
@@ -16,11 +16,11 @@ This project adds a distinct private-markets workflow to a portfolio that alread
 | Linked exit | Reconciled terminal cash feeds the waterfall; carry is an equity transfer, and exact investor distributions close all accounts |
 | Public research population | Governed official-source observations and provenance kept separate from synthetic cash flows and report cutoffs |
 | Reporting delivery | Offline HTML, investor statements, journal and metric CSVs, SQLite fact/dimension tables, SQL reconciliation and a documented Power BI import handoff |
-| Evidence and presentation | Input/code/artifact hashes, immutable local run packs, financial/workflow tests, source and methodology guides, portable release and an interview walkthrough |
+| Evidence and reproduction | Input/code/artifact hashes, immutable local run packs, financial/workflow tests, source and methodology guides and portable release |
 
 The four comparison funds, Northstar and public disclosure observations are independent populations. Public cumulative totals cannot reconstruct dated fund cash flows. Neither public observations nor synthetic scenarios establish forecast calibration.
 
-## Demonstration story
+## Analytical review
 
 1. Explain the measurement date and the information cutoff. Admit a late-recorded call and a NAV revision by moving only the information cutoff.
 2. Inspect the comparison funds and explain why DELTA's alternating flows retain an unavailable conventional XIRR despite diagnostic candidate roots.
@@ -29,7 +29,7 @@ The four comparison funds, Northstar and public disclosure observations are inde
 5. Compare profitable, low-profit, loss and clawback waterfalls; inspect the recallable-capacity and failed-payment cases.
 6. Reconcile the saved warehouse, inspect public-source dates and hashes, and open the portable evidence package.
 
-Use [INTERVIEW_WALKTHROUGH.md](INTERVIEW_WALKTHROUGH.md) for the timed presentation and questions to prepare. Explain the assumptions and code you understand; describe Codex's contribution accurately.
+OpenAI Codex assisted with research, implementation, documentation and verification. The methodology guides identify the assumptions and calculation boundaries.
 
 ## Boundaries and extensions
 

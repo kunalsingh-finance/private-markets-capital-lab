@@ -82,7 +82,6 @@ The project does not claim production readiness, model calibration, GIPS certifi
 
 | File or guide | Purpose |
 | --- | --- |
-| [Interview walkthrough](docs/INTERVIEW_WALKTHROUGH.md) | A 5–8 minute demonstration and questions to prepare |
 | [Scope](docs/SCOPE.md) | Implemented analytical populations and acceptance boundaries |
 | [Reporting model](docs/REPORTING_MODEL.md) | SQLite grains, reconciliation queries and Power BI handoff |
 | [Performance methodology](docs/PERFORMANCE_METHODOLOGY.md) | Dated returns, total-return benchmarking, cutoffs and solver limits |
@@ -92,4 +91,4 @@ The project does not claim production readiness, model calibration, GIPS certifi
 | [Validation](docs/VALIDATION.md) | Current numerical, workflow and interface evidence |
 | `pmcapital/`, `tests/`, `sql/` | Calculations, controls, tests and reporting queries |
 
-This is an independent portfolio project built with OpenAI Codex assistance in research, implementation, documentation and verification. Present the decisions and calculations you can explain and reproduce. Synthetic results are not employment experience, client work or evidence of employer impact.
+This is an independent research project built with OpenAI Codex assistance in research, implementation, documentation and verification. Synthetic results do not represent client work or realized investment outcomes.

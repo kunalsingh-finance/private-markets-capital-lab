@@ -42,7 +42,7 @@ def main():
                 "package_kind": "portable_evidence", "packaged_sources": sources,
             }
             archive.writestr("evidence/run_status.json", json.dumps(portable_status, indent=2))
-            archive.writestr("START_HERE.html", '<!doctype html><meta charset="utf-8"><title>Private Markets Capital Lab</title><h1>Private Markets Performance & Capital Lab</h1><p>Independent synthetic partnership model and separately governed public research.</p><p><a href="report.html">Open the saved investor report</a></p><p>See README.md for a source rebuild and docs/INTERVIEW_WALKTHROUGH.md for the demonstration.</p>')
+            archive.writestr("START_HERE.html", '<!doctype html><meta charset="utf-8"><title>Private Markets Capital Lab</title><h1>Private Markets Performance & Capital Lab</h1><p>Independent synthetic partnership model and separately governed public research.</p><p><a href="report.html">Open the saved investor report</a></p><p>See README.md for usage and source rebuild instructions, and docs/PROJECT_BRIEF.md for the analytical workflow.</p>')
         verified = verify_archive(temporary)
         latest, _, latest_sources = verify_current_evidence(ROOT)
         if latest != status or latest_sources != sources:
